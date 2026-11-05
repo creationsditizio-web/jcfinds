@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connected — JC Finds</title>
+  <meta name="description" content="Authorization result for JC Finds Publisher.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="./">JC <span>Finds</span></a>
+      <nav>
+        <a href="./">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>JC Finds Publisher</h2>
+      <p id="msg">Reading authorization…</p>
+      <p class="note">Copy the code below and give it to the JC Finds Publisher on your computer. It expires in a few minutes.</p>
+      <pre id="code" style="white-space:pre-wrap;word-break:break-all;background:#f4f6fa;padding:12px;border-radius:8px"></pre>
+    </section>
+  </main>
+  <script>
+    var params = new URLSearchParams(location.search);
+    var code = params.get("code"), error = params.get("error_description") || params.get("error");
+    document.getElementById("msg").textContent = code ? "Authorization received." : (error ? "Authorization failed: " + error : "No authorization code in this link.");
+    document.getElementById("code").textContent = code || "";
+  </script>
+</body>
+</html>
