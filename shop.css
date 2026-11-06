@@ -169,3 +169,21 @@ footer a { color: var(--purple); }
   .pic img { padding: 8px; }
   .tile { width: 88px; }
 }
+
+.doors-head { text-align: center; padding: 30px 0 22px; }
+.doors-head h1 { margin: 0; font-size: 38px; line-height: 1.15; }
+.doors-head p { margin: 8px 0 0; color: var(--muted); }
+.doors { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.door { display: flex; flex-direction: column; background: var(--card); border-radius: 20px; overflow: hidden;
+        color: inherit; text-decoration: none; box-shadow: 0 6px 20px rgba(106, 27, 154, .12); }
+.door img { width: 100%; height: 340px; object-fit: cover; display: block; }
+.door-text { display: flex; flex-direction: column; gap: 6px; padding: 20px 24px 24px; }
+.door-text b { font-size: 28px; color: var(--purple); }
+.door-text em { font-style: normal; font-weight: 700; color: var(--pink); }
+.ideas { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+.idea { display: flex; flex-direction: column; background: var(--card); border-radius: 16px; overflow: hidden;
+        color: inherit; text-decoration: none; box-shadow: 0 4px 14px rgba(106, 27, 154, .1); }
+.idea img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; display: block; }
+.idea b { padding: 12px 14px 14px; }
+@media (max-width: 760px) { .doors { grid-template-columns: 1fr; } .door img { height: 220px; }
+  .doors-head h1 { font-size: 29px; } }
