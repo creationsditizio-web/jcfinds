@@ -1,4 +1,10 @@
 /* JC Finds shop window: home page and Today's Finds */
+.gift-banner { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; margin: 18px 0 6px; padding: 18px 22px;
+  border-radius: 18px; background: linear-gradient(120deg, #7a1f2b, #b8862f); color: #fff; text-decoration: none; }
+.gift-banner b { font-size: 22px; } .gift-banner span { opacity: .92; } .gift-banner em { margin-left: auto; font-style: normal; font-weight: 700; }
+.gift-jump { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 12px; }
+.gift-jump a { padding: 6px 12px; border-radius: 999px; background: #f3e9dc; color: #5b3a1e; text-decoration: none; font-size: 14px; }
+.gift-block h2 { margin: 28px 0 10px; }
 :root { --ink: #2a1838; --muted: #74657f; --line: #eedff3; --bg: #fdf7fb; --card: #fff;
         --purple: #6a1b9a; --violet: #8e24aa; --pink: #e83e8c; --soft: #f6e9f8; --sale: #c2185b; }
 * { box-sizing: border-box; }
